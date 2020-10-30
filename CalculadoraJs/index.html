@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Calculadora</title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+      <script type="text/javascript" src="script.js"></script>
+
+   </head>
+
+   <body>
+
+      <form name="formuCalculadora" method="post" action="">
+         <fieldset>
+            <input readonly type="text" name="visor" id="visor" />
+
+            <div id="calc">
+               <div class="row linha">
+                  <div class="col-md-6"></div>
+                     <div class="col-md-3 botao"><input type="button" name="limpar" id="limpar" class="numero" value="AC" onclick="limpar()" /></div>
+                     <div class="col-md-3 botao"><input type="button" name="dividir" id="dividir" class="operacao" value="/" onclick="controleFluxo('dividir')" /></div>
+               </div>
+               <div class="row">
+                  <div class="col-md-3 botao"><input type="button" name="num7" id="num7" class="numero" value="7" onclick="insereNumero(7)" /></div>
+                  <div class="col-md-3 botao"><input type="button" name="num8" id="num8" class="numero" value="8" onclick="insereNumero(8)" /></div>
+                  <div class="col-md-3 botao"><input type="button" name="num9" id="num9" class="nnumeroum" value="9" onclick="insereNumero(9)" /></div>
+                  <div class="col-md-3 botao"><input type="button" name="multiplicar" id="multiplicar" class="operacao" value="*" onclick="controleFluxo('multiplicar')" /></div>
+               </div>
+               <div class="row">
+                  <div class="col-md-3 botao"><input type="button" name="num4" id="num4" class="numero" value="4" onclick="insereNumero(4)" /></div>
+                  <div class="col-md-3 botao"><input type="button" name="num5" id="num5" class="numero" value="5" onclick="insereNumero(5)" /></div>
+                  <div class="col-md-3 botao"><input type="button" name="num6" id="num6" class="numero" value="6" onclick="insereNumero(6)" /></div>
+                  <div class="col-md-3 botao"><input type="button" name="subtrair" id="subtrair" class="operacao" value="-" onclick="controleFluxo('subtrair')" /></div>
+               </div>
+               <div class="row">
+                  <div class="col-md-3 botao"><input type="button" name="num1" id="num1" class="numero" value="1" onclick="insereNumero(1)" /></div>
+                  <div class="col-md-3 botao"><input type="button" name="num2"  id="num2" class="numero" value="2" onclick="insereNumero(2)" /></div>
+                  <div class="col-md-3 botao"><input type="button" name="num3" id="num3" class="numero" value="3" onclick="insereNumero(3)" /></div>
+                  <div class="col-md-3 botao"><input type="button" name="somar" id="somar" class="operacao" value="+" onclick="controleFluxo('somar')" /></div>
+               </div>
+               <div class="row linha">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-3 botao"><input type="button" name="num0" id="num0" class="numero" value="0" onclick="insereNumero(0)" /></div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-3 botao"><input type="button" name="igual" id="igual" class="operacao" value="=" onclick="controleFluxo('resultado')" /></div>
+               </div>
+            </div>
+         </fieldset>
+      </form>
+
+   </body>
+</html>
