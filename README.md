@@ -1,5 +1,5 @@
 # Calculadora
-Calculadora com as quatro funcçoes basicas feita em JavaScript e em Angular.
+Calculadora com as quatro funções básicas feita em JavaScript e em Angular.
 
 As duas versões devem ser clonadas através do git para que possam ser testadas.
 
